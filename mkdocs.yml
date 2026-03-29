@@ -58,3 +58,4 @@ nav:
   - Inicio: index.md
   - Backlog:
     - Requisitos: backlog/requisitos.md
+    - Histórias de Usuário: backlog/historias-de-usuario.md
