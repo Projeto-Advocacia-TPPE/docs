@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#requisitos-elicitados" class="md-skip">
+        <a href="#backlog-do-produto" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -412,24 +412,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Requisitos
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -446,36 +428,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requisitos-funcionais" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Requisitos Funcionais
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -509,25 +461,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requisitos-funcionais" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Requisitos Funcionais
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -546,9 +479,54 @@
   
 
 
-<h1 id="requisitos-elicitados">Requisitos Elicitados<a class="headerlink" href="#requisitos-elicitados" title="Permanent link">&para;</a></h1>
-<p>A partir da entrevista realizada com o cliente, foram elicitados requisitos relacionados à organização e gestão de informações jurídicas, abrangendo controle de clientes, processos, prazos, documentos, compromissos e dados financeiros, além da integração com fontes externas de dados processuais. Os requisitos identificados foram classificados em funcionais e não funcionais, proporcionando maior clareza na definição do escopo do sistema.</p>
-<h2 id="requisitos-funcionais">Requisitos Funcionais<a class="headerlink" href="#requisitos-funcionais" title="Permanent link">&para;</a></h2>
+<h1 id="backlog-do-produto">Backlog do Produto<a class="headerlink" href="#backlog-do-produto" title="Permanent link">&para;</a></h1>
+<p>A partir da entrevista realizada com o cliente, foram definidos requisitos e histórias de usuário para um sistema de gestão jurídica com presença online e integração com APIs externas.</p>
+<hr />
+<h1 id="epico-1-autenticacao-e-seguranca">Épico 1: Autenticação e Segurança<a class="headerlink" href="#epico-1-autenticacao-e-seguranca" title="Permanent link">&para;</a></h1>
+<p>Como usuário do sistema, quero fazer login com e-mail e senha, para que eu acesse as funcionalidades autorizadas ao meu perfil.</p>
+<p>Como usuário, quero que o sistema utilize autenticação com token JWT e refresh token, para que minha sessão seja segura e persistente.</p>
+<p>Como usuário que esqueceu sua senha, quero solicitar recuperação por e-mail, para que eu recupere o acesso sem depender de suporte.</p>
+<p>Como Administrador, quero cadastrar, editar e gerenciar usuários, para que eu controle o acesso ao sistema.</p>
+<p>Como Administrador, quero atribuir papéis (Administrador, Advogado e Secretária), para que cada usuário tenha permissões adequadas.</p>
+<p>Como Administrador, quero que todas as ações relevantes sejam registradas automaticamente, para que haja rastreabilidade do sistema.</p>
+<p>Como Administrador, quero consultar logs de auditoria com filtros, para que eu possa investigar ações realizadas.</p>
+<hr />
+<h1 id="epico-2-presenca-online-e-landing-page">Épico 2: Presença Online e Landing Page<a class="headerlink" href="#epico-2-presenca-online-e-landing-page" title="Permanent link">&para;</a></h1>
+<p>Como visitante, quero acessar uma landing page institucional, para conhecer o advogado e seus serviços.</p>
+<p>Como visitante, quero visualizar artigos jurídicos, para me informar sobre temas relevantes.</p>
+<p>Como visitante, quero entrar em contato facilmente via formulário ou WhatsApp, para iniciar atendimento.</p>
+<p>Como Administrador, quero editar textos e imagens da landing page, para manter o conteúdo atualizado.</p>
+<p>Como Advogado, quero criar artigos com título, conteúdo e imagem, para produzir conteúdo jurídico.</p>
+<p>Como Advogado, quero definir o status da publicação (rascunho, agendado ou publicado), para controlar visibilidade.</p>
+<p>Como Advogado, quero visualizar um preview antes de publicar, para revisar o conteúdo.</p>
+<hr />
+<h1 id="epico-3-gestao-de-leads-e-clientes">Épico 3: Gestão de Leads e Clientes<a class="headerlink" href="#epico-3-gestao-de-leads-e-clientes" title="Permanent link">&para;</a></h1>
+<p>Como sistema, quero registrar automaticamente leads vindos da landing page, para não perder potenciais clientes.</p>
+<p>Como usuário, quero listar e filtrar leads, para organizar o atendimento.</p>
+<p>Como Administrador, quero converter um lead em cliente, para evitar retrabalho.</p>
+<p>Como usuário, quero cadastrar e editar clientes, para manter uma base atualizada.</p>
+<p>Como Advogado, quero visualizar o histórico completo do cliente, para ter contexto antes do atendimento.</p>
+<p>Como usuário, quero buscar clientes por nome, CPF/CNPJ ou processo, para localizar rapidamente.</p>
+<hr />
+<h1 id="epico-4-core-juridico">Épico 4: Core Jurídico<a class="headerlink" href="#epico-4-core-juridico" title="Permanent link">&para;</a></h1>
+<p>Como Advogado, quero cadastrar processos com seus dados principais, para manter controle centralizado.</p>
+<p>Como sistema, quero vincular processos a clientes, para organizar os dados.</p>
+<p>Como Advogado, quero registrar movimentações manualmente em uma linha do tempo, para acompanhar o processo.</p>
+<p>Como Advogado, quero alterar o status do processo, para refletir sua situação atual.</p>
+<p>Como Advogado, quero adicionar anotações internas, para registrar estratégias.</p>
+<p>Como usuário, quero listar e filtrar processos, para facilitar a busca.</p>
+<p>Como sistema, quero cadastrar prazos vinculados aos processos, para controlar vencimentos.</p>
+<p>Como sistema, quero notificar o usuário sobre prazos próximos, para evitar perdas.</p>
+<hr />
+<h1 id="epico-5-integracoes-com-apis">Épico 5: Integrações com APIs<a class="headerlink" href="#epico-5-integracoes-com-apis" title="Permanent link">&para;</a></h1>
+<p>Como Advogado, quero consultar movimentações processuais via API (CNJ/DATAJUD), para evitar consultas manuais.</p>
+<p>Como sistema, quero inserir automaticamente as movimentações retornadas na linha do tempo, para manter os dados atualizados.</p>
+<p>Como sistema, quero executar consultas periódicas em processos ativos, para manter o sistema atualizado.</p>
+<p>Como usuário, quero consultar dados de empresas via API da Receita Federal, para preencher automaticamente informações.</p>
+<p>Como Administrador, quero visualizar logs de chamadas de API, para monitorar o sistema.</p>
+<p>Como sistema, quero realizar retentativas automáticas em caso de falha, para aumentar a confiabilidade.</p>
+<hr />
+<h1 id="requisitos-funcionais">Requisitos Funcionais<a class="headerlink" href="#requisitos-funcionais" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
@@ -559,82 +537,86 @@
 </thead>
 <tbody>
 <tr>
-<td>#RF01</td>
-<td>Fundação e Segurança</td>
-<td>Autenticação de usuários via e-mail e senha com geração de token JWT e refresh token.</td>
+<td>RF01</td>
+<td>Segurança</td>
+<td>Login com e-mail e senha</td>
 </tr>
 <tr>
-<td>#RF02</td>
-<td>Fundação e Segurança</td>
-<td>Recuperação de senha por e-mail.</td>
+<td>RF02</td>
+<td>Segurança</td>
+<td>JWT com refresh token</td>
 </tr>
 <tr>
-<td>#RF03</td>
-<td>Fundação e Segurança</td>
-<td>Cadastro e edição dos dados do escritório (nome, CNPJ, endereço, telefone, horário de funcionamento, logotipo, redes sociais).</td>
+<td>RF03</td>
+<td>Segurança</td>
+<td>Recuperação de senha</td>
 </tr>
 <tr>
-<td>#RF04</td>
-<td>Fundação e Segurança</td>
-<td>Registro automático e consulta de logs de auditoria (quem, o quê, quando), com filtragem pelo administrador.</td>
+<td>RF04</td>
+<td>Segurança</td>
+<td>Logs de auditoria</td>
 </tr>
 <tr>
-<td>#RF05</td>
-<td>Presença Online</td>
-<td>Landing page institucional estática, com Blog/seção de artigos, formulário de contato (e/ou botão direto pro WhatsApp) e seções que passam credibilidade (sobre, serviços, diferenciais).</td>
+<td>RF05</td>
+<td>Presença</td>
+<td>Landing page</td>
 </tr>
 <tr>
-<td>#RF06</td>
-<td>Presença Online</td>
-<td>Edição dos textos e imagens da landing page (hero, sobre, diferenciais) pelo painel.</td>
+<td>RF06</td>
+<td>Presença</td>
+<td>Edição da landing page</td>
 </tr>
 <tr>
-<td>#RF07</td>
-<td>Presença Online</td>
-<td>Preview da publicação antes de publicar.</td>
+<td>RF07</td>
+<td>Presença</td>
+<td>Preview de artigos</td>
 </tr>
 <tr>
-<td>#RF08</td>
-<td>Gestão de Relacionamento</td>
-<td>Recepção automática de leads enviados pelo formulário da landing page</td>
+<td>RF08</td>
+<td>CRM</td>
+<td>Captura de leads</td>
 </tr>
 <tr>
-<td>#RF09</td>
-<td>Gestão de Relacionamento</td>
-<td>Listagem de leads com filtros por data, status e responsável, com alteração de status e atribuição de responsável diretamente na lista.</td>
+<td>RF09</td>
+<td>CRM</td>
+<td>Gestão de leads</td>
 </tr>
 <tr>
-<td>#RF10</td>
-<td>Gestão de Relacionamento</td>
-<td>Cadastro, edição e busca de clientes por nome, CPF/CNPJ ou número de processo, com dados pessoais, endereço e contatos.</td>
+<td>RF10</td>
+<td>CRM</td>
+<td>Gestão de clientes</td>
 </tr>
 <tr>
-<td>#RF11</td>
-<td>Core Jurídico</td>
-<td>Cadastro de processo com número do CNJ, vara, comarca, tipo de ação, parte contrária, advogado responsável e vínculo ao cliente cadastrado.</td>
+<td>RF11</td>
+<td>Jurídico</td>
+<td>Cadastro de processos</td>
 </tr>
 <tr>
-<td>#RF12</td>
-<td>Core Jurídico</td>
-<td>Listagem de processos com filtros por status, vara, área, advogado e cliente, com alteração de status (ativo, suspenso, arquivado, encerrado).</td>
+<td>RF12</td>
+<td>Jurídico</td>
+<td>Listagem e filtros de processos</td>
 </tr>
 <tr>
-<td>#RF13</td>
-<td>Core Jurídico</td>
-<td>Anotações internas do advogado vinculadas ao processo.</td>
+<td>RF13</td>
+<td>Jurídico</td>
+<td>Anotações</td>
 </tr>
 <tr>
-<td>#RF14</td>
-<td>Core Jurídico</td>
-<td>Cadastro de prazos vinculados a processos, com notificação automática ao usuário conforme a proximidade do vencimento.</td>
-</tr>
-<tr>
-<td>#RF14</td>
-<td>Agendas e Prazos</td>
-<td>Cadastro de prazos vinculados a processos, com notificação automática ao usuário conforme a proximidade do vencimento.</td>
+<td>RF14</td>
+<td>Jurídico</td>
+<td>Gestão de prazos</td>
 </tr>
 </tbody>
 </table>
+<hr />
+<h1 id="requisitos-nao-funcionais">Requisitos Não Funcionais<a class="headerlink" href="#requisitos-nao-funcionais" title="Permanent link">&para;</a></h1>
+<p><strong>RNF01.</strong> O sistema deve possuir autenticação segura baseada em JWT.<br />
+<strong>RNF02.</strong> O sistema deve ser responsivo (desktop e mobile).<br />
+<strong>RNF03.</strong> O sistema deve registrar logs de auditoria.<br />
+<strong>RNF04.</strong> O sistema deve suportar integração com APIs externas.<br />
+<strong>RNF05.</strong> O sistema deve tratar falhas de API com retentativas automáticas.<br />
+<strong>RNF06.</strong> O sistema deve garantir integridade dos dados.<br />
+<strong>RNF07.</strong> O sistema deve permitir expansão futura.  </p>
 
 
 
