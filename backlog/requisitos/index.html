@@ -12,7 +12,7 @@
         <meta name="author" content="Equipe 8 de TPPE">
       
       
-        <link rel="canonical" href="https://Projeto-Advocacia-TPPE.github.io/docs/exemplo/visao-geral/">
+        <link rel="canonical" href="https://Projeto-Advocacia-TPPE.github.io/docs/backlog/requisitos/">
       
       
         <link rel="prev" href="../..">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Visão Geral - Documentação Técnica</title>
+        <title>Requisitos - Documentação Técnica</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#visao-geral" class="md-skip">
+        <a href="#requisitos-elicitados" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Visão Geral
+              Requisitos
             
           </span>
         </div>
@@ -253,7 +253,7 @@
           
   
   
-  Exemplo
+  Backlog
 
         </a>
       </li>
@@ -374,7 +374,7 @@
   <span class="md-ellipsis">
     
   
-    Exemplo
+    Backlog
   
 
     
@@ -390,7 +390,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Exemplo
+    Backlog
   
 
           </label>
@@ -419,7 +419,7 @@
   <span class="md-ellipsis">
     
   
-    Visão Geral
+    Requisitos
   
 
     
@@ -437,7 +437,7 @@
   <span class="md-ellipsis">
     
   
-    Visão Geral
+    Requisitos
   
 
     
@@ -463,32 +463,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#arquitetura" class="md-nav__link">
+  <a href="#requisitos-funcionais" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Arquitetura
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemplo-de-uso" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemplo de uso
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Notas
+        Requisitos Funcionais
       
     </span>
   </a>
@@ -538,32 +516,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#arquitetura" class="md-nav__link">
+  <a href="#requisitos-funcionais" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Arquitetura
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemplo-de-uso" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemplo de uso
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Notas
+        Requisitos Funcionais
       
     </span>
   </a>
@@ -590,50 +546,95 @@
   
 
 
-<h1 id="visao-geral">Visão Geral<a class="headerlink" href="#visao-geral" title="Permanent link">&para;</a></h1>
-<p>Esta seção apresenta uma visão geral do sistema.</p>
-<h2 id="arquitetura">Arquitetura<a class="headerlink" href="#arquitetura" title="Permanent link">&para;</a></h2>
-<p>O sistema é composto pelos seguintes módulos principais:</p>
+<h1 id="requisitos-elicitados">Requisitos Elicitados<a class="headerlink" href="#requisitos-elicitados" title="Permanent link">&para;</a></h1>
+<p>A partir da entrevista realizada com o cliente, foram elicitados requisitos relacionados à organização e gestão de informações jurídicas, abrangendo controle de clientes, processos, prazos, documentos, compromissos e dados financeiros, além da integração com fontes externas de dados processuais. Os requisitos identificados foram classificados em funcionais e não funcionais, proporcionando maior clareza na definição do escopo do sistema.</p>
+<h2 id="requisitos-funcionais">Requisitos Funcionais<a class="headerlink" href="#requisitos-funcionais" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Módulo</th>
+<th>ID</th>
+<th>Categoria</th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Clientes</td>
-<td>Cadastro e gerenciamento de clientes</td>
+<td>#RF01</td>
+<td>Fundação e Segurança</td>
+<td>Autenticação de usuários via e-mail e senha com geração de token JWT e refresh token.</td>
 </tr>
 <tr>
-<td>Processos</td>
-<td>Controle de processos jurídicos</td>
+<td>#RF02</td>
+<td>Fundação e Segurança</td>
+<td>Recuperação de senha por e-mail.</td>
 </tr>
 <tr>
-<td>Documentos</td>
-<td>Armazenamento e organização de documentos</td>
+<td>#RF03</td>
+<td>Fundação e Segurança</td>
+<td>Cadastro e edição dos dados do escritório (nome, CNPJ, endereço, telefone, horário de funcionamento, logotipo, redes sociais).</td>
+</tr>
+<tr>
+<td>#RF04</td>
+<td>Fundação e Segurança</td>
+<td>Registro automático e consulta de logs de auditoria (quem, o quê, quando), com filtragem pelo administrador.</td>
+</tr>
+<tr>
+<td>#RF05</td>
+<td>Presença Online</td>
+<td>Landing page institucional estática, com Blog/seção de artigos, formulário de contato (e/ou botão direto pro WhatsApp) e seções que passam credibilidade (sobre, serviços, diferenciais).</td>
+</tr>
+<tr>
+<td>#RF06</td>
+<td>Presença Online</td>
+<td>Edição dos textos e imagens da landing page (hero, sobre, diferenciais) pelo painel.</td>
+</tr>
+<tr>
+<td>#RF07</td>
+<td>Presença Online</td>
+<td>Preview da publicação antes de publicar.</td>
+</tr>
+<tr>
+<td>#RF08</td>
+<td>Gestão de Relacionamento</td>
+<td>Recepção automática de leads enviados pelo formulário da landing page</td>
+</tr>
+<tr>
+<td>#RF09</td>
+<td>Gestão de Relacionamento</td>
+<td>Listagem de leads com filtros por data, status e responsável, com alteração de status e atribuição de responsável diretamente na lista.</td>
+</tr>
+<tr>
+<td>#RF10</td>
+<td>Gestão de Relacionamento</td>
+<td>Cadastro, edição e busca de clientes por nome, CPF/CNPJ ou número de processo, com dados pessoais, endereço e contatos.</td>
+</tr>
+<tr>
+<td>#RF11</td>
+<td>Core Jurídico</td>
+<td>Cadastro de processo com número do CNJ, vara, comarca, tipo de ação, parte contrária, advogado responsável e vínculo ao cliente cadastrado.</td>
+</tr>
+<tr>
+<td>#RF12</td>
+<td>Core Jurídico</td>
+<td>Listagem de processos com filtros por status, vara, área, advogado e cliente, com alteração de status (ativo, suspenso, arquivado, encerrado).</td>
+</tr>
+<tr>
+<td>#RF13</td>
+<td>Core Jurídico</td>
+<td>Anotações internas do advogado vinculadas ao processo.</td>
+</tr>
+<tr>
+<td>#RF14</td>
+<td>Core Jurídico</td>
+<td>Cadastro de prazos vinculados a processos, com notificação automática ao usuário conforme a proximidade do vencimento.</td>
+</tr>
+<tr>
+<td>#RF14</td>
+<td>Agendas e Prazos</td>
+<td>Cadastro de prazos vinculados a processos, com notificação automática ao usuário conforme a proximidade do vencimento.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="exemplo-de-uso">Exemplo de uso<a class="headerlink" href="#exemplo-de-uso" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Exemplo de criação de um cliente</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">cliente</span> <span class="o">=</span> <span class="n">Cliente</span><span class="p">(</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">nome</span><span class="o">=</span><span class="s2">&quot;João da Silva&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">cpf</span><span class="o">=</span><span class="s2">&quot;123.456.789-00&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">email</span><span class="o">=</span><span class="s2">&quot;joao@exemplo.com&quot;</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">cliente</span><span class="o">.</span><span class="n">salvar</span><span class="p">()</span>
-</code></pre></div>
-<h2 id="notas">Notas<a class="headerlink" href="#notas" title="Permanent link">&para;</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Informação</p>
-<p>Esta é uma página de exemplo. Substitua o conteúdo com a documentação real do projeto.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Atenção</p>
-<p>Certifique-se de preencher todos os campos obrigatórios ao cadastrar um novo registro.</p>
-</div>
 
 
 
