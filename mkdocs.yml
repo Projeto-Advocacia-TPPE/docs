@@ -59,4 +59,4 @@ nav:
   - Backlog:
     - Visão Geral: backlog/index.md
     - Requisitos: backlog/requisitos.md
-    - Histórias de Usuário: backlog/historias-de-usuario.md
+    #- Histórias de Usuário: backlog/historias-de-usuario.md
